@@ -3,18 +3,6 @@ var inputTask = document.getElementById('new-task');
 var unfinishedTasks = document.getElementById('unfinished-tasks');
 var finishedTasks = document.getElementById('finished-tasks');
 
-
-(function() {
-  document.querySelector('input').addEventListener('keydown', function(e) {
-    if (e.keyCode === 13) {
-      // можете делать все что угодно со значением текстового поля
-      console.log(this.value);
-    }
-  });
-})();
-
-
-
 function createNewElement(task, finished) {
     var listItem = document.createElement('li');
     var checkbox = document.createElement('button');
