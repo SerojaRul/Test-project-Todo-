@@ -1,0 +1,350 @@
+we /* latin */
+@font-face {
+  font-family: 'Abel';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Abel Regular'), local('Abel-Regular'), url(https://fonts.gstatic.com/s/abel/v10/MwQ5bhbm2POE2V9BPbh5uGM.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin */
+@font-face {
+  font-family: 'Architects Daughter';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Architects Daughter Regular'), local('ArchitectsDaughter-Regular'), url(https://fonts.gstatic.com/s/architectsdaughter/v10/KtkxAKiDZI_td1Lkx62xHZHDtgO_Y-bvTYlg4-7jA-U.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+ body {
+    background: #333;
+    background-image: url(http://todolistme.net/images/texture.png);
+    color: black;
+    font-family: Abel, 'Lucida Sans Unicode', 'Lucida Grande',Tahoma, Garuda, Verdana, sans-serif;
+    height: 100%;
+    font-size: 18px;
+    line-height: 2.5em;
+}
+
+.container {
+    display: block;
+    width: 600px;
+    margin: auto 0;
+  /*  border: 2px solid black;
+    border-radius: 15px; */
+    padding: 0px 1.5em 30px;
+
+}
+
+
+
+ul {
+    margin: 5px 0;
+    padding: 0;
+}
+
+li * {
+    float: left;
+}
+
+li, h3 {
+    clear: both;
+    list-style: none;
+}
+
+input, button {
+    outline: none;
+}
+
+button {
+    background: none;
+    border: 0px;
+    color: #888;
+    font-size: 15px;
+    font-family: sans-serif;
+    cursor: pointer;
+    float: right;
+    margin: 8px auto;
+}
+
+button:hover {
+    color: black;
+}
+
+#add:hover {
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    background-color: #b9ecb5;
+    color: #999;
+    
+}
+
+#add {
+    float: right;
+    padding: 10px;
+    margin-top: 20px;
+    width: 80px;
+    height: 41px;
+}
+
+h3 {
+    
+    font-weight: bold;
+    font-size: 18px;
+/* border-bottom: 2px solid black; */
+    margin: 0 0 10px;
+}
+
+input[type="text"] {
+    margin-top: 20px;
+    margin-bottom: 4px;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 18px;
+    line-height: 18px;
+    height: 18px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 6px;
+  /*  font-family: sans-serif; */
+    color: #888;
+}
+
+input[type="text"]:focus {
+    color: black;
+}
+
+label[for='new-task'] {
+    display: block;
+    margin: 0 0 20px;
+}
+
+input#new-task {
+    float: left;
+    width: 490px; 
+                      /*487*/
+}
+
+p > button:hover {
+    color: #0FC57C;
+}
+
+li {
+    overflow: hidden;
+    border-bottom: 1px solid #eee;
+}
+
+li > input[type="checkbox"] {
+    margin: 0 10px;
+    position: relative;
+    top: 15px;
+    transform: scale(1.5);
+}
+
+li > label {
+    font-size: 18px;
+    line-height: 40px;
+    width: 237px;
+    padding: 1px 0 0 11px
+}
+
+li > input[type="text"] {
+    width: 457px;
+}
+
+li > .delete:hover {
+    color: #CF2323;
+}
+
+#finished-tasks label, #finished-tasks button {
+    text-decoration: line-through;
+    color: lightgray;
+}
+
+ul li input[type=text] {
+    display: none;
+}
+
+ul li.editMode input[type=text] {
+    display: block;
+}
+
+ul li.editMode label {
+    display: none;
+}
+
+button.checkbox {
+    float: left;
+} 
+
+/* header */
+
+img {
+ height: 2em;
+ margin-top: 14px;
+}
+
+
+a, .slogan {
+    text-shadow: -1px 1px 1px rgba(255, 255, 255, 0.4), 1px -1px 1px rgba(0, 0, 128, 0.4);
+    color: rgba(35, 69, 99, 0.6); 
+    font-size: 18px; 
+    text-decoration: none;
+}
+
+.zagolovok {
+    color: #eee;
+    padding: 10px 5px;
+
+} 
+
+.nav-menu {
+    padding-left: 230px;
+}
+
+
+/* flex-box */
+
+.flex-header {
+    display: flex;
+    justify-content: space-around; /* выравнивание элементов вдоль главной оси */
+    background-color: #689ac7;
+    box-shadow: 0 4px 10px 2px rgba(90, 90, 90, 0.2);
+    height: 40px;
+    width: 100%;
+    min-width: 460px;
+    background: linear-gradient(to bottom, #80a6c8 10%, #5491c8 50%);
+    font-family: 'Architects Daughter';
+    position: fixed;
+    z-index: 2;
+}
+
+
+
+.header_section {
+    display: flex;
+    align-items: center; /* выравнивает элементы вдоль строки */
+
+}
+
+.header_links a {
+    padding: 7px 10px;
+    font-size: 18px;
+    
+}
+
+
+.header_links:hover {
+    background-color: rgba(30, 144, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15%;
+    box-shadow: 0 4px 10px 2px rgba(90, 90, 90, 0.4);
+    background: linear-gradient(to bottom, #80a6c8 10%, #5491c8 50%);
+}
+
+.slogan h2 {
+font-size: 18px;
+padding: 5px 5px;
+}
+
+/* main */
+.flex_main {
+    flex-direction: column;
+    z-index: 1;
+    display: flex;
+    height: 780px;
+    width: 650px;
+    background-color: #fafafa;
+    min-width: 450px;
+    box-shadow: 0 4px 10px 2px rgba(90, 90, 90, 0.2);
+    border-radius: 0 0 3px 3px;
+    position: relative;
+    left: 500px;
+    top: 40px;
+}
+
+.todo_items h2 {
+    font-weight: bold;
+    font-size: 35px;
+    font-family: 'Times New Roman';
+    color: #999;
+    padding-left: 1em;
+    margin: 1em 0px 0px 0px;
+}
+
+
+.container h3 {
+    color: #999;
+    font-weight: bold; 
+    font-size: 1.17em; 
+    padding-left: 1.5em;
+    padding-bottom: 0.5em;
+    padding-top: 1em;
+    margin-bottom: 0px;
+}
+
+/* progress bar */
+
+.myProgress {
+  width: 100%;
+  background-color: #b9ecb5;
+  border-radius: 8px;
+
+  
+}
+/* изменения */
+.myProgressDone {
+  width: 100%;
+  background-color: #dddddd; 
+  border-radius: 8px;
+  
+}
+
+
+#myBar {
+    margin-top: 0.5em;
+    width: 0%;
+    height: 10px;
+    background-color: #dddddd;
+    text-align: center; /* To center it horizontally (if you want) */
+    line-height: 10px; /* To center it vertically */
+    color: grey; 
+    border-radius: 8px;
+    
+}
+
+#myBarDone {
+    margin-top: 0.5em;
+    width: 0%;
+    height: 10px;
+    background-color: #b9d4ed;
+    text-align: center; /* To center it horizontally (if you want) */
+    line-height: 10px; /* To center it vertically */
+    color: grey; 
+    border-radius: 8px;
+    
+}
+
+
+
+
+/* footer */
+
+.flex_footer {
+
+    height: 200px;
+    width: 100%;
+    z-index: 0;
+    display: flex;
+    background-color: #f0e6d9;
+    border-top: 2px solid rgba(192, 192, 192, 0.7);
+    background: linear-gradient(to top, #f0e6db 35%, #f0e6db 55%, #f0e6db 75%, #f0eeeb 100%);
+    padding-bottom: 0;
+}
+

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Список дел</title>
+    <link rel="stylesheet" href="material-icons.css">    
+    <link rel="stylesheet" href="./main.css">  
+</head>
+<body>
+
+<div class='flex-header'>
+        <!--section 1-->
+    <div class='header_section nav-menu'>
+        <div class='header_item zagolovok'>
+            <h1>TodoListMe</h1>
+        </div>
+        <div class='header_item logotick'>
+            <img src="./images/tick.png" alt="tick">
+        </div>
+        <div class='header_item slogan'>
+            <h2>Powerfully Simple</h2>
+        </div>
+    </div>
+        <!--section 2-->
+    <div class='header_section links_in'>
+        <div class='header_item header_links'>
+            <a href='http://todolistme.net'>Status</a>
+        </div>
+        <div class='header_item header_links'>
+            <a href='http://todolistme.net'>Synk</a>
+         </div>
+        <div class='header_item header_links'>
+            <a href='http://todolistme.net'>Remote</a>
+        </div>
+    </div>
+</div>
+
+    <!-- main -->
+<div class="flex_main">
+    <div id="root" class="main_items todo_items">
+
+        <h2>Today's tasks</h2>
+        <div class="container">
+            <h3>To do:</h3>
+              <!-- progress bar-->
+            <div class="myProgress">
+                <div id="myBar"></div>
+            </div> 
+            
+
+            <ul id="unfinished-tasks">
+
+            </ul>
+
+            <input id="new-task" type="text">
+            <button id="add">Add</button>
+
+            <h3>Done:</h3>
+            <!-- progress bar-->
+            <div class="myProgressDone">
+                <div id="myBarDone"></div>
+            </div> 
+    
+            <ul id="finished-tasks">
+
+
+            </ul>
+            
+            
+        </div>
+
+    </div>
+</div> 
+
+<!--footer-->
+    <div class='flex_footer'>
+        <div class='footer_section'>
+            
+        </div>
+    </div>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>    
+<script src="./index.js"></script>
+
+</body>
+</html>
