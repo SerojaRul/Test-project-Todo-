@@ -149,34 +149,10 @@ function progressDone(l1, l2) {
     elem.style.width = Math.floor(100 - percent) + '%';
     elem.innerHTML = Math.floor(0 + percent)  + '%';
 
- //   const percent2 = (total / l2) * 100;
-    elem2.style.width = Math.floor(100 - percent) + '%';
-    elem2.innerHTML = Math.floor(100 - percent) + '%'; 
-
-
-}   
-
-
-/*
-reserved copy
-
-function progressDone(l1, l2) {
-    debugger;
-    const elem = document.getElementById('myBar');
-    const elem2 = document.getElementById('myBarDone');
-
-    const total = l1 + l2;
-    const percent = (l1 / total) * 100;
-
-    elem.style.width = Math.floor(100 - percent) + '%';
-    elem.innerHTML = Math.floor(100 - percent)  + '%';
-
     elem2.style.width = Math.floor(100 - percent) + '%';
     elem2.innerHTML = Math.floor(100 - percent) + '%'; 
 
 }   
-*/
-
 
 
 
